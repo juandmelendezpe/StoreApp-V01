@@ -1,0 +1,443 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-azul: #012169;
+    --color-azulino: #253880;
+    --color-celeste: #169BD7;
+    --color-violeta: #9586bd;
+    --color-morado: #6355a4;
+    --texto-blanco: #fff;
+    --texto-negro: #000;    
+}
+
+/*------BODY----------*/
+body{
+    width: 100%;
+    height: auto;
+    /*background-image: linear-gradient(90deg, #012169 0%, #169BD7 50%, #012169 100%);*/
+    background-color: white;
+}
+
+/* HEADER */
+
+header{
+    margin: 0px;
+}
+
+/* Encabezado */
+
+.encabezado {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: var(--texto-negro);
+}
+/*---------BANNER PRINCIPAL ------------*/
+
+
+.banner-principal{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+.banner-principal img{
+    width: 40%;
+    height: auto;
+    
+}
+.banner-gif img{
+    width: 20%;
+    height: auto;
+}
+
+#menu {
+    background-color: var(--color-morado )!important;
+    color: var(--texto-blanco);
+    width: 100%;
+    height: auto;
+    margin: 0px;
+}
+#menu-a a:hover{
+    color: var(--texto-blanco);
+}
+
+.menu {
+    width: 100%;
+    height: 4%;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item {
+    padding-right: 30px;
+} 
+.nav-item a{
+    color: var(--texto-blanco) !important;
+    border-radius: 10px;
+}
+.nav-item a:hover{
+    background-color: var(--color-violeta);
+}
+.dropdown-menu a{
+    color:var(--color-morado) !important;
+}
+
+/*------------------------------- Main principal -------------------*/
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.productos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.card-producto {
+    width: 30%;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 40px;
+    background-image: linear-gradient(90deg, #012169 0%, #169BD7 100%);
+    color: var(--texto-blanco);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-producto__img {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.card-producto__img img {
+    width: 100%;
+    border-radius: 20px;
+}
+.card-producto__img img:hover{
+    border: 2px solid var(--texto-blanco);
+}
+
+.card-producto__info {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-detalles,
+.btn-compra,
+.btn-valorar {
+    margin-top: 20px;
+}
+
+
+/* Producto */
+
+.info-producto {
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 5px;
+    background-image: linear-gradient(90deg, #012169 0%, #169BD7 100%);
+    color: var(--texto-blanco);
+}
+
+.datos-producto {
+    display: flex;
+    align-items: center;
+}
+
+.imgProducto {
+    width: 50%;
+    padding: 30px;
+}
+
+.detalles {
+    width: 50%;
+    padding: 50px;
+    text-align: center;
+}
+
+.detalles h3 {
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+}
+
+.detalles h4 {
+    font-size: 2.2rem;
+    padding-bottom: 30px;
+}
+
+.comprar-producto {
+    display: flex;
+    justify-content: end;
+}
+
+.btn-valorar,
+.btn-confirmar {
+    background-color: var(--color-celeste) !important;
+    border-color: var(--color-azulino) !important;
+}
+
+.btn-valorar:hover,
+.btn-confirmar:hover {
+    background-color: var(--color-azulino) !important;
+}
+
+.hacer-valoracion {
+    display: flex;
+    justify-content: center;
+}
+
+.valoraciones {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.card-valoracion {
+    width: 45%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 20px;
+}
+
+.card-valoracion h4 {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card-valoracion p {
+    padding: 20px 10px;
+}
+
+.estrellas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.estrellas h5 {
+    margin: 0;
+}
+
+.estrellas img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+
+/* Comprar producto */
+
+.titulo-compra {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.form-compra {
+    margin: 50px 10% 0 10%;
+}
+
+
+/* Detalles compra */
+
+.tabla-compra {
+    margin-top: 70px !important;
+    font-size: 1.1rem;
+}
+
+.volver-inicio {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.btn-inicio {
+    background-color: var(--color-violeta) !important;
+    border-color: var(--color-morado) !important;
+}
+
+.btn-inicio:hover {
+    background-color: var(--color-morado) !important;
+}
+
+
+/* Crear producto */
+
+.form-producto {
+    padding: 30px 50px;
+    margin: 30px 0;
+    border-radius: 5px;
+    color: var(--texto-blanco);
+    background-image: linear-gradient(90deg, #012169 0%, #169BD7 100%);
+}
+
+.form-producto h3 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.fila-form,
+.btn-form {
+    margin: 20px 0;
+}
+
+.fila-form label {
+    width: 25%;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
+.fila-form input,
+.fila-form select {
+    width: 60%;
+    display: inline-block;
+}
+
+.btn-form {
+    display: flex;
+    justify-content: end;
+}
+
+
+/* Tabla ventas */
+
+.tabla-ventas h2,
+.tabla-productos h2 {
+    padding: 20px 0 40px 0;
+}
+
+.tabla-ventas,
+.tabla-productos,
+.tabla-compra {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Tabla productos */
+
+.tabla-productos table td:last-child {
+    width: 20%;
+}
+
+.tabla-productos table td:last-child a,
+.tabla-productos table td:last-child button {
+    width: 40%;
+}
+/* -----------------------ValoracionesPage--------------------------------
+
+/* MAIN*/
+
+.container-valoraciones {
+    width: 80%;
+    height: 475px;
+    margin: 0 auto;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+/*-------------SECTION VALORACIONES PAG----*/
+
+/*SECTION*/
+.section-valoraciones{
+    border-radius: 10px;
+    width: 60%;
+    padding: 2%;
+    color: var(--texto-blanco);
+    background-image: linear-gradient(90deg, #012169 0%, #169BD7 100%);
+}
+/*------------- VALORACIONES PAGE----*/
+
+.datos-producto-valoraciones {
+   width: 100%;
+   height: 40%;
+   border: 1px solid var(--texto-negro);
+
+}
+
+.datos-producto-valoraciones img {
+    width: 90%;
+    height: 40%;
+    margin: 2%;
+    border: 1px solid var(--texto-negro);
+}
+
+.detalles-valoraciones {
+    margin: 5% auto;
+    width: 100%;
+    height: 50%;
+    border: 1px solid var(--color-morado);
+}
+/* ---------FORMULARIO VALORACIONES ------*/
+
+/*--BUTTON----*/
+#Btn-valoraciones{
+
+    margin-left: 45%;
+    margin-top: 7%;
+}
+
+/* Footer */
+
+footer{
+    padding: 15px;
+    margin: 0;
+    margin-top: 10px;
+    width: 100%;
+    height: 22%;
+    background-color: var(--color-morado);
+    color: var(--texto-blanco);
+    margin-top: 50px;
+}
+.redes-sociales{
+    width: 30%;
+    height: auto;
+    display: block;
+    position: relative;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+
+}
+ .redes-sociales img {
+    width: 15%;
+    margin-right: 20px;
+}
+.redes-sociales img:hover{
+    border: 3px solid var(--texto-blanco);
+    border-radius: 50%;
+}
+.footer-logo
+{
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+.footer-logo img{
+    margin: 0px;
+    width: 20%;
+    border-radius: 50%;
+}
+.footer-logo img:hover{
+    width: 22%;
+    border-radius: 50%;
+    border: 3px solid var(--texto-blanco);
+}
+footer p {
+    width: 30%;
+    height: auto;
+    margin-left: 7%;
+}
+.col-2{
+    margin-right: 12%;
+}
