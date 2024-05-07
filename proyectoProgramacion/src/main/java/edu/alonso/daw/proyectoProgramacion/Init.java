@@ -18,6 +18,7 @@ import edu.alonso.daw.proyectoProgramacion.model.Venta;
 public class Init {
 	
 	private static Logger logger = LogManager.getLogger(Init.class);
+	
 
 
 	public static void main(String[] args) {
