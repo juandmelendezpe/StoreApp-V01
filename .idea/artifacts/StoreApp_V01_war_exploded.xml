@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="StoreApp-V01:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/StoreApp_V01_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="StoreApp-V01/web/Web" />
+      <element id="javaee-facet-resources" facet="StoreApp-V01/web/Web2" />
+      <element id="javaee-facet-resources" facet="StoreApp-V01/web/Web3" />
+      <element id="javaee-facet-resources" facet="StoreApp-V01/web/Web4" />
+      <element id="javaee-facet-resources" facet="StoreApp-V01/web/Web5" />
+      <element id="javaee-facet-resources" facet="StoreApp-V01/web/Web6" />
+      <element id="javaee-facet-resources" facet="StoreApp-V01/web/Web7" />
+      <element id="javaee-facet-resources" facet="StoreApp-V01/web/Web8" />
+      <element id="javaee-facet-resources" facet="StoreApp-V01/web/Web9" />
+    </root>
+  </artifact>
+</component>
