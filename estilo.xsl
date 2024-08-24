@@ -62,7 +62,7 @@
 										<a
 											class="nav-link active"
 											aria-current="page"
-											href="principal.html"
+											href="index.html"
 											id="menu-a"
 											>Inicio</a>
 									</li>

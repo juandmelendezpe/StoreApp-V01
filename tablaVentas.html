@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Realizar compra</title>
+    <title>Ventas</title>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
@@ -43,7 +43,8 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="principal.html"
+                  href="index.html"
+                  id="menu-a"
                   >Inicio</a
                 >
               </li>
@@ -58,9 +59,7 @@
                   Productos
                 </a>
                 <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#">Tecnología</a>
-                  </li>
+                  <li><a class="dropdown-item" href="#">Tecnología</a></li>
                   <li><a class="dropdown-item" href="#">Ocio</a></li>
                   <li><a class="dropdown-item" href="#">Decoración</a></li>
                 </ul>
@@ -111,52 +110,40 @@
         </div>
       </nav>
     </div>
-    <main class="container">
-      <h3 class="titulo-compra">
-        Ha seleccionado el siguiente producto para comprar
-      </h3>
-      <section class="info-producto">
-        <div class="datos-producto">
-          <img class="imgProducto" src="img/laptop.jpg" alt="Imagen producto" />
-          <div class="detalles">
-            <h3>Portátil</h3>
-            <h4>799,99 €</h4>
-            <p>Categoría: Tecnología</p>
-            <p>Stock disponible: 20</p>
-          </div>
-        </div>
-      </section>
 
-      <section class="form-compra">
-        <h3 class="titulo-compra">Confirme los detalles de su compra</h3>
-        <form action="#" method="POST">
-          <div class="fila-form">
-            <label for="nombre" class="form-label">Su nombre</label>
-            <input
-              type="text"
-              name="nombre"
-              class="form-control"
-              placeholder="Ingrese su nombre"
-            />
-          </div>
-          <div class="fila-form">
-            <label for="cantidad" class="form-label">Cantidad</label>
-            <input
-              type="number"
-              name="cantidad"
-              class="form-control"
-              placeholder="Ingrese la cantidad"
-            />
-          </div>
-          <div class="btn-form">
-            <a
-              href="principal.html"
-              role="button"
-              class="btn btn-primary btn-confirmar"
-              >Confirmar compra</a
-            >
-          </div>
-        </form>
+    <main class="container">
+      <section class="tabla-ventas">
+        <h2>Lista de ventas</h2>
+        <table class="table table-primary table-striped">
+          <tr class="table-dark">
+            <th>Nombre comprador</th>
+            <th>Nombre producto</th>
+            <th>Fecha</th>
+            <th>Cantidad</th>
+            <th>Precio unidad</th>
+          </tr>
+          <tr>
+            <td>Daniel</td>
+            <td>Portátil</td>
+            <td>2023-05-20</td>
+            <td>1</td>
+            <td>799,99 €</td>
+          </tr>
+          <tr>
+            <td>Carlos</td>
+            <td>Monopoly</td>
+            <td>2023-05-20</td>
+            <td>2</td>
+            <td>16,95 €</td>
+          </tr>
+          <tr>
+            <td>Andrea</td>
+            <td>Luces led</td>
+            <td>2023-05-21</td>
+            <td>4</td>
+            <td>12,80 €</td>
+          </tr>
+        </table>
       </section>
     </main>
 

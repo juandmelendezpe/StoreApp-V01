@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Producto</title>
+    <title>Productos</title>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
@@ -43,7 +43,8 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="principal.html"
+                  href="index.html"
+                  id="menu-a"
                   >Inicio</a
                 >
               </li>
@@ -58,9 +59,7 @@
                   Productos
                 </a>
                 <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#">Tecnología</a>
-                  </li>
+                  <li><a class="dropdown-item" href="#">Tecnología</a></li>
                   <li><a class="dropdown-item" href="#">Ocio</a></li>
                   <li><a class="dropdown-item" href="#">Decoración</a></li>
                 </ul>
@@ -112,62 +111,68 @@
       </nav>
     </div>
     <main class="container">
-      <section class="info-producto">
-        <div class="datos-producto">
-          <img class="imgProducto" src="img/laptop.jpg" alt="Imagen producto" />
-          <div class="detalles">
-            <h3>Portátil</h3>
-            <h4>799,99 €</h4>
-            <p>Categoría: Tecnología</p>
-            <p>Stock disponible: 20</p>
-            <div class="estrellas">
-              <h5>Valoración: 3.5</h5>
-              <img src="img/estrella.png" alt="Icono estrella" />
-            </div>
-          </div>
-        </div>
-        <div class="comprar-producto">
-          <a
-            href="compraProducto.html"
-            role="button"
-            class="btn btn-outline-light btn-compra"
-            >Comprar</a
-          >
-        </div>
-      </section>
-
-      <section class="valoraciones-producto">
-        <div class="hacer-valoracion">
-          <a
-            href="valoraciones.html"
-            role="button"
-            class="btn btn-primary btn-valorar"
-            >Valorar producto</a
-          >
-        </div>
-        <div class="valoraciones">
-          <div class="card-valoracion">
-            <h4 class="text-bg-dark">Daniel</h4>
-            <p>El portatil es muy bueno, recomiendo que lo compren</p>
-            <hr />
-            <div class="estrellas">
-              <h5>Valoración: 4</h5>
-              <img src="img/estrella.png" alt="Icono estrella" />
-            </div>
-          </div>
-          <div class="card-valoracion">
-            <h4 class="text-bg-dark">Pedro</h4>
-            <p>
-              Este equipo es muy ligero, pero me ha dado problemas con algunas
-              aplicaciones
-            </p>
-            <hr />
-            <div class="estrellas">
-              <h5>Valoración: 3</h5>
-              <img src="img/estrella.png" alt="Icono estrella" />
-            </div>
-          </div>
-        </div>
+      <section class="tabla-productos">
+        <h2>Lista de productos</h2>
+        <table class="table table-primary table-striped">
+          <tr class="table-dark">
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Categoría</th>
+            <th>Operaciones</th>
+          </tr>
+          <tr>
+            <td>Portátil</td>
+            <td>799,99 €</td>
+            <td>10</td>
+            <td>Tecnología</td>
+            <td>
+              <a
+                class="btn btn-success btn-sm"
+                href="crearProducto.html"
+                role="button"
+                >Modificar</a
+              >
+              <button type="button" class="btn btn-danger btn-sm">
+                Eliminar
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>Monopoly</td>
+            <td>16,95 €</td>
+            <td>26</td>
+            <td>Ocio</td>
+            <td>
+              <a
+                class="btn btn-success btn-sm"
+                href="crearProducto.html"
+                role="button"
+                >Modificar</a
+              >
+              <button type="button" class="btn btn-danger btn-sm">
+                Eliminar
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>Teclado</td>
+            <td>78,90 €</td>
+            <td>5</td>
+            <td>Tecnología</td>
+            <td>
+              <a
+                class="btn btn-success btn-sm"
+                href="crearProducto.html"
+                role="button"
+                >Modificar</a
+              >
+              <button type="button" class="btn btn-danger btn-sm">
+                Eliminar
+              </button>
+            </td>
+          </tr>
+        </table>
       </section>
     </main>
 
@@ -224,23 +229,23 @@
             </li>
           </ul>
         </div>
+      </div>
 
-        <div class="d-flex justify-content-between py-4 my-4 border-top">
-          <p>© 2023 Company, Inc. All rights reserved.</p>
-          <div class="redes-sociales">
-            <a src="https://es-es.facebook.com/" target="_blank">
-              <img src="img/facebook.png" alt="Logo Facebook" />
-            </a>
-            <a src="https://es-es.facebook.com/" target="_blank">
-              <img src="img/twitter.png" alt="Logo Twitter" />
-            </a>
-            <a src="https://es-es.facebook.com/" target="_blank">
-              <img src="img/instagram.png" alt="Logo Instagram" />
-            </a>
-          </div>
-          <div class="footer-logo">
-            <img src="img/logo.jpg" alt="logo" />
-          </div>
+      <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <p>© 2023 Company, Inc. All rights reserved.</p>
+        <div class="redes-sociales">
+          <a src="https://es-es.facebook.com/" target="_blank">
+            <img src="img/facebook.png" alt="Logo Facebook" />
+          </a>
+          <a src="https://es-es.facebook.com/" target="_blank">
+            <img src="img/twitter.png" alt="Logo Twitter" />
+          </a>
+          <a src="https://es-es.facebook.com/" target="_blank">
+            <img src="img/instagram.png" alt="Logo Instagram" />
+          </a>
+        </div>
+        <div class="footer-logo">
+          <img src="img/logo.jpg" alt="logo" />
         </div>
       </div>
     </footer>
